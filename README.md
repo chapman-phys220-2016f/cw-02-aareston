@@ -22,7 +22,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+Relearning Python was extremely helpful, as well as having to get used to using SageMathCloud and GitHub together was a plus for me with this classwork.
 
 ## Honor Pledge
 
@@ -33,4 +33,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+Preston S Kamada, 
