@@ -14,24 +14,22 @@ You can check this field for any other python module (numpy, sympy, etc.)
 to get an idea about how module documentation is usually handled.
 """
 
+import nose as n
 import math
 
 def pathlength(x,y):
-num = len(x)
-eq = math.sqrt((x[i]-x[i-1])**2+(y[i]-y[i-1])**2)
-L = sum(eq)
-return L
+    num = len(x)
+    S = 0
+    for i in range(num):
+        S += math.sqrt((x[i]-x[i-1])**2+(y[i]-y[i-1])**2)
+    return S
+
 
 def test_pathlength():
-points = [(0,0), (0,3), (3,3) (3,0)]
-
-num = len(points)
-x = [points[i][0]]
-y = [points[i][1]]
-
-def test_pathlength():
-points = [(0,0), (0,3), (3,3), (3,0)]
-
-test = test_pathlength():
-print test
+    points = [(0,0), (0,3), (3,3), (3,0)]
+    x = [p[0] for p in points]
+    y = [p[1] for p in points]
+    test = pathlength(x,y)
+    case = 12.0
+    n.tools.assert_almost_equal(test, case)
 
