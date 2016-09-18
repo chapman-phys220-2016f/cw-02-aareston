@@ -1,27 +1,44 @@
 #!/usr/bin/env python
 
-"""Module Description
-The docstring at the top of the file appears in the "Description" field of 
-the help command. That is, if you load a python interpreter the following 
-makes the docstring visible:
+import nose as n
 
-  $ python
-  >>> import your_module
-  >>> help(your_module)
-
-Note the name "your_module" is just the filename without the .py extension.
-You can check this field for any other python module (numpy, sympy, etc.) 
-to get an idea about how module documentation is usually handled.
+"""
+This module will return a list of n + 1 equally spaced coordinates in a given range
 """
 
 
 def coor(n,a,b):
+    """
+    Calculates a list of coordinates using a for loop
+    """
     coordinates = []
-    length = (b-a)/float(n)
+    length = (b-a)/float(n+1)
     for i in range(n+1):
-        coordinates.append(a + length*i)
-    for i in range(n+1):
-        print coordinates[i]
-    return 0
+        coordinates.append(a + length * (i + 1))
+    return coordinates
 
-coor(3,1,4)
+def coor_2(n,a,b):
+    """
+    Calculates a list of coordinates using a list comprehension
+    """
+    length = (b-a)/float(n+1)
+    coordinates = [a + length * (i + 1) for i in range(n+1)]
+    return coordinates
+
+def test_coor():
+    """
+    Using nosetests framework, tests the function coor for the case (3,1,5)
+    """
+    test = coor(3,1,5)
+    case = [2.0,3.0,4.0]
+    for i in range(3):
+        n.tools.assert_almost_equal(case[i], test[i])
+
+def main():
+    """
+    Prints the result of the case (3,1,5) using first coor, then coor_2
+    """
+    print coor(3,1,5)
+
+if __name__ == "__main__":
+    main()
