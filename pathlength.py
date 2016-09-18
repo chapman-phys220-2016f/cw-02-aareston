@@ -33,3 +33,12 @@ def test_pathlength():
     case = 12.0
     n.tools.assert_almost_equal(test, case)
 
+### INSTRUCTOR COMMENTS
+# Again, use docstrings properly.
+#
+# When writing tests, it can be useful to include information in the test
+# about what the values are that you are testing, in case the test fails.
+# You can print values before the assert command, for example, and those
+# print statements will only appear in nosetests if the test fails.
+# Alternatively, most assert commands allow you to include a string directly:
+#   assert foo==2, "Value of foo: "+foo
