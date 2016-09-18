@@ -24,6 +24,11 @@ Analyze in this section what you found useful about this assignment in your own 
 
 Relearning Python was extremely helpful, as well as having to get used to using SageMathCloud and GitHub together was a plus for me with this classwork.
 
+## INSTRUCTOR COMMENTS
+Be sure to complete your assignments. You are missing problem 3, as well as your notebook. You also kept cruft in your source code from the template, did not properly document your code, and did not provide complete test coverage.
+
+Remember that you are being assessed as a professional in this class. Turn in professional work that you are proud of, and that you would be willing to show an employer in the future. Also be sure that everyone contributes to the classwork equally, and that all people sign the honor pledge below. Communication is a key part of any functional job environment, so it is crucial that you develop those skills now.
+
 ## Honor Pledge
 
 I pledge that all the work in this repository is my own with only the following exceptions:
