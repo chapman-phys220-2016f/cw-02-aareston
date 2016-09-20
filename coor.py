@@ -40,11 +40,8 @@ def main():
     """
     print coor(3,1,5)
 
-<<<<<<< HEAD
 if __name__ == "__main__":
     main()
-=======
-coor(3,1,4)
 
 ### INSTRUCTOR COMMENTS
 #
@@ -69,4 +66,4 @@ coor(3,1,4)
 # test functions instead, which can be run by the "nosetests" program in a
 # terminal automatically. If you wish to run your module as a script, protect any
 # executable code inside an if __name__ == "__main__" block.
->>>>>>> 8c37185826ff85b97c386813dd8c33239626f212
+

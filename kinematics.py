@@ -32,13 +32,13 @@ def test_kinematics():
     test = kinematics([0, 0.5, 1.5, 2.2], [0, 0.5, 1.5, 2.2])
     case = (["*",1.0,1.0,"*"], ["*",0.0,0.0,"*"])               #This is going to cause issues, but to find velocity and acceleration values at the endpoints would require additional datapoints in x
 
-    success = 0
+    s = 0
     def approx_eq(x,y,tol=0.01):
         return abs(x - y) < tol
     for i, j in test, case:
         if approx_eq(i, j):
-            success += 1
-    assert(success == 4)
+            s += 1
+    assert(s == 4)
 
 if __name__ == "__main":
     main()
