@@ -24,6 +24,8 @@ Analyze in this section what you found useful about this assignment in your own 
 
 Relearning Python was extremely helpful, as well as having to get used to using SageMathCloud and GitHub together was a plus for me with this classwork.
 
+I believe the kinematics question is poorly formulated, but I should have asked questions about it sooner.
+
 ## INSTRUCTOR COMMENTS
 Be sure to complete your assignments. You are missing problem 3, as well as your notebook. You also kept cruft in your source code from the template, did not properly document your code, and did not provide complete test coverage.
 
@@ -38,4 +40,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-Preston S Kamada,
+Preston S Kamada, Aaron Grisez
