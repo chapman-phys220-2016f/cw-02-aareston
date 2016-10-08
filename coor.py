@@ -10,6 +10,20 @@ This module will return a list of n + 1 equally spaced coordinates in a given ra
 def coor(n,a,b):
     """
     Calculates a list of coordinates using a for loop
+
+    Parameters
+    ----------
+        n: integer
+            number of coordinates to use between endpoints
+        a: float
+            starting point
+        b: float
+            ending point
+
+    Returns
+    -------
+        coordinates: list
+            list of n coordinates between the beginning point and including the endpoint spacing the interval into n+1 equal subdivisions
     """
     coordinates = []
     length = (b-a)/float(n+1)
